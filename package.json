@@ -1,0 +1,19 @@
+{
+  "name": "node-mysql-rest-api-with-cron-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "db:migrate": "mysql -u root -p < db.sql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.3",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "sequelize": "^6.37.2"
+  }
+}
