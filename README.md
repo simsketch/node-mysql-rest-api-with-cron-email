@@ -1,5 +1,5 @@
-# coding-challenge
-This is a take-home coding challenge that involves creating a Node.js API with MySQL integration and a cron job.
+# node-mysql-rest-api-with-cron-email
+This application creates a Node.js API with MySQL integration and a cron job.
 ## Overview
 The application is built using Node.js and Express, with a MySQL database managed using the Sequelize ORM. The project structure includes the following files:
 - `app.js`: The main entry point of the application, setting up the Express server, connecting to the database, and mounting the user API routes.
