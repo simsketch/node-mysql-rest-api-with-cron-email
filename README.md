@@ -6,7 +6,7 @@ The application is built using Node.js and Express, with a MySQL database manage
 - `db.js`: Handles the connection to the MySQL database using Sequelize.
 - `user.model.js`: Defines the User model and the database schema.
 - `user.controller.js`: Defines the API routes and controllers for managing users.
-- `db.sql`: Contains the SQL scripts for setting up the database schema and seeding the users table with initial data.
+- `db.sql`: Contains the SQL scripts for setting up the database schema and seeding the users table with initial data. Update this file with the appropriate credentials for your local mysql instance.
 - `cron.js`: Implements a cron job that runs daily to send a report of new users added in the last 24 hours.
 - `email.service.js`: Handles the sending of the daily user report email using SendGrid.
 ## Features
