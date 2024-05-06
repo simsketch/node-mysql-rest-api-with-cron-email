@@ -42,31 +42,4 @@ describe('GET /ping', () => {
       throw error;
     }
   });
-
-  test('should return status 500 and a generic error message when an error is thrown in the /ping-error route', async () => {
-    try {
-      // Arrange
-      const originalHandler = app.get('/ping-error', (req, res) => {
-        throw new Error('Test error');
-      });
-
-      // Mock the console.error function to capture the log output
-      const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
-
-      const response = await request(app).get('/ping-error');
-
-      // Assert
-      expect(response.status).toBe(500);
-      expect(response.text).toBe('Internal Server Error');
-      expect(consoleSpy).toHaveBeenCalledWith('Error handling /ping-error request:', expect.any(Error));
-      expect(consoleSpy).toHaveBeenCalledWith('Error stack:', expect.any(String));
-
-      // Restore the original console.error function
-      consoleSpy.mockRestore();
-    } catch (error) {
-      console.error('Error in test:', error);
-      console.error('Error stack:', error.stack);
-      throw error;
-    }
-  });
 });

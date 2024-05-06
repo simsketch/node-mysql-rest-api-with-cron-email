@@ -10,7 +10,7 @@ The application is built using Node.js and Express, with a MySQL database manage
 - `cron.js`: Implements a cron job that runs daily to send a report of new users added in the last 24 hours.
 - `email.service.js`: Handles the sending of the daily user report email using SendGrid.
 ## Features
-The \"coding-challenge\" application provides the following features:
+The "coding-challenge" application provides the following features:
 1. **User API**: Implements a RESTful API for managing users, including endpoints for fetching all users, fetching a single user by ID, creating a new user, updating an existing user, and deleting a user.
 2. **Input Validation**: The API validates the input data and handles errors gracefully, such as responding with appropriate error messages for missing or duplicate data.
 3. **Cron Job**: Implements a daily cron job that fetches the users created in the last 24 hours and sends a summary report to the admin email address.
@@ -48,3 +48,6 @@ npm install
 npm start
 ```
 6. The server will start running on `http://localhost:3000`
+
+## License
+Copyright (c) 2024.
